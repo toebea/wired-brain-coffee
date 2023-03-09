@@ -5,20 +5,20 @@ jobs:
       - image: circleci/ruby:2.4.1-node-browsers
       
     steps:
-      -checkout
+      - checkout
       
-      -run:
+      - run:
         name: Greeting
         command: echo Hello, Anderson!
       
-      -run:
+      - run:
         name: Build dependencies
         command: bundle install
       
-      -run:
+      - run:
         name: Build the jekyll site
         command: bundle exec jekyll build
         
-      -run:
+      - run:
         name: Print the Current date/time
         command: date
