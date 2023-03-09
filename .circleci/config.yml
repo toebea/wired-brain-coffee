@@ -8,10 +8,6 @@ jobs:
       - checkout
       
       - run:
-        name: Greeting
-        command: echo Hello, Anderson!
-      
-      - run:
         name: Build dependencies
         command: bundle install
       
